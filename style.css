@@ -78,3 +78,11 @@ footer {
     color: #fff;
     font-size: 0.9rem;
 }
+
+/* Efect hover pentru cadrane */
+.card:hover {
+    transform: translateY(-5px) scale(1.02);
+    box-shadow: 0 12px 25px rgba(0,0,0,0.3);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    cursor: pointer;
+}
