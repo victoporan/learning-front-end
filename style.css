@@ -1,0 +1,80 @@
+/* Resetare stiluri implicite */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Setări de bază */
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    background-color: #f9f9f9;
+    color: #000000;
+}
+
+/* Header */
+header {
+    background: #9c7f7f;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+}
+header h1 {
+    font-size: 2rem;
+}
+header nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    margin-top: 10px;
+}
+header nav ul li {
+    margin: 0 15px;
+}
+header nav ul li a {
+    color: #4f2727;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+/* Secțiuni */
+section {
+    padding: 40px 20px;
+    max-width: 1200px;
+    margin: auto;
+}
+section h2 {
+    text-align: center;
+    margin-bottom: 20px;
+    font-size: 1.8rem;
+    color: #444;
+}
+
+/* Galerie de proiecte */
+.galerie {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 20px;
+}
+.card {
+    background: #fff;
+    padding: 15px;
+    border-radius: 10px;
+    box-shadow: 0 2px 10px rgba(153, 92, 92, 0.174);
+    text-align: center;
+}
+.card img {
+    width: 100%;
+    border-radius: 10px;
+    margin-bottom: 10px;
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    padding: 15px;
+    background: #9c7f7f;
+    color: #fff;
+    font-size: 0.9rem;
+}
