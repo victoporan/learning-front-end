@@ -64,6 +64,7 @@ section h2 {
   box-shadow: 0 4px 15px rgba(153, 92, 92, 0.2);
   padding: 20px;
   height: 1000px;
+  width: auto;
   text-align: center;
   transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
@@ -149,12 +150,16 @@ footer {
 
 /* Responsive */
 @media (max-width: 768px) {
-    font-size: 1.2rem;
-  }
-  .slider-buttons button {
+    body {               /* selectorul poate fi body, h1, p, .slider etc. */
+        font-size: 1.2rem;
+    }
+}
+
+.slider-buttons button {
     padding: 6px 12px;
     font-size: 14px;
-  }
+}
+
 
 .thumbnails {
   display: flex;
