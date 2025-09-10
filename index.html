@@ -1,77 +1,274 @@
 <!DOCTYPE html>
 <html lang="ro">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portofoliu Arhitectură - Victoria Toporan</title>
-    <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Portofoliu Arhitectură - Victoria Toporan</title>
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <!-- HEADER -->
-    <header>
-        <h1>Portofoliu Arhitectură</h1>
-        <nav>
-            <ul>
-                <li><a href="#despre">Despre mine</a></li>
-                <li><a href="#proiecte">Proiecte</a></li>
-                <li><a href="#contact">Contact</a></li>
-            </ul>
-        </nav>
-    </header>
 
-    <!-- SECȚIUNEA DESPRE -->
-    <section id="despre">
-        <h2>Despre mine</h2>
-        <p>Bună! Sunt Victoria, proaspăt absolventă a Facultății de Arhitectură și sunt pasionată de designul modern, atât de interior cât și de exterior. Mai jos găsești câteva dintre proiectele mele realizate în timpul anilor de studiu.</p>
-    </section>
+  <!-- HEADER -->
+  <header>
+    <h1>Portofoliu Arhitectură</h1>
+    <nav>
+      <ul>
+        <li><a href="#despre">Despre mine</a></li>
+        <li><a href="#proiecte">Proiecte</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
 
-    <!-- SECȚIUNEA PROIECTE -->
-    <section id="proiecte">
-        <h2>Proiectele mele</h2>
-        <div class="galerie">
-            <div class="card">
-                <img src="scene-17.jpg" alt="zonă de citit">
-                <h3>Locuință</h3>
-                <p>Zonă de citit</p>
-            </div>
-            <div class="card">
-                <img src="Scene-10.jpg" alt="un dormitor">
-                <h3>Locuință colectivă</h3>
-                <p>Dormitor</p>
-            </div>
-            <div class="card">
-                <img src="scene-15.jpg" alt="zona expozițională a unui muzeu de artă">
-                <h3>Muzeu de artă</h3>
-                <p>Zonă expozițională</p>
-            </div>
-            <div class="card">
-                <img src="scene-14.jpg" alt="curtea interioară a unui centru comunitar">
-                <h3>Centru comunitar</h3>
-                <p>Curte interioară</p>
-            </div>
-            <div class="card">
-                <img src="scene-16.jpg" alt="imagine aeriană a unei piețe agroalimentare">
-                <h3>Piață agroalimentară</h3>
-                <p>Imagine aeriană</p>
-            </div>
-            <div class="card">
-                <img src="Scene-13.jpg" alt="atelier de sculptură">
-                <h3>Facultate de sculptură</h3>
-                <p>Atelier de lucru</p>
+  <!-- DESPRE -->
+  <section id="despre">
+    <h2>Despre mine</h2>
+    <p>
+      Bună! Sunt Victoria, proaspăt absolventă a Facultății de Arhitectură și sunt pasionată de designul modern,
+      atât de interior cât și de exterior. Mai jos găsești câteva dintre proiectele mele realizate în timpul
+      anilor de studiu.
+    </p>
+  </section>
+
+  <!-- PROIECTE -->
+  <section id="proiecte">
+    <h2>Proiectele mele</h2>
+<div class="thumbnails">
+    <div class="thumb-wrapper">
+      <a href="#proiect-locuinta" class="thumb">
+        <img src="Scene-19.png" alt="Proiect 1">
+      </a>
+      <p class="thumb-text">Locuință</p>
+    </div>
+
+    <div class="thumb-wrapper">
+      <a href="#proiect-centru" class="thumb">
+        <img src="ProiectGrozavesti_Perspectiva2.jpg" alt="Proiect 2">
+      </a>
+      <p class="thumb-text">Centru Educațional</p>
+    </div>
+
+    <div class="thumb-wrapper">
+      <a href="#proiect-facultate" class="thumb">
+        <img src="AtelierSculptura.jpg" alt="Proiect 3">
+      </a>
+      <p class="thumb-text">Facultate Sculptură</p>
+    </div>
+
+    <div class="thumb-wrapper">
+      <a href="#proiect-piata" class="thumb">
+        <img src="ProiectGrozavesti_Axonometrie.jpg" alt="Proiect 4">
+      </a>
+      <p class="thumb-text">Piață Agroalimentară</p>
+    </div>
+
+    <div class="thumb-wrapper">
+      <a href="#proiect-5" class="thumb">
+        <img src="AltaImagine.jpg" alt="Proiect 5">
+      </a>
+      <p class="thumb-text">Proiect 5</p>
+    </div>
+  </div>
+
+
+    <div class="galerie">
+
+      <!-- CARD 1: Locuință -->
+      <div class="card" id="proiect-locuinta">
+        <div class="slider">
+          <div class="slides">
+            <img src="scene-17.jpg" alt="Perspectivă">
+            <img src="scene-18.png" alt="Perspectivă">
+            <img src="Scene-19.png" alt="Perspectivă">
+            <img src="Scene-20.png" alt="Perspectivă">
+          </div>
+  
+          <p class="slider-text">Zonă de citit</p>
+          <div class="slider-buttons">
+            <button class="prev">&#10094;</button>
+            <h3>Locuință</h3>
+            <button class="next">&#10095;</button>
+          </div>
+            <div class="slider-caption">
+            Acest colț de interior are un vibe cald și relaxat, cu o combinație plăcută între lemnul închis de pe perete și mobilierul modern, în tonuri neutre. Tabloul minimalist cu linia siluetei adaugă un strop de artă fără să încarce spațiul, iar vaza cu ramuri delicate aduce o notă naturală și caldă. Toate elementele împreună creează un loc simplu, dar elegant, perfect pentru momente de liniște sau citit.
             </div>
         </div>
-    </section>
+      </div>
 
-    <!-- SECȚIUNEA CONTACT -->
-    <section id="contact">
-        <h2>Contact</h2>
-        <p>Email: toporan_victoria@yahoo.com
-        <p>Instagram: <a href="https://instagram.com/victoria.toporan" target="_blank">victoria.toporan</a></p>
-    </section>
+      <!-- CARD 2: Centru educațional -->
+      <div class="card" id="proiect-centru">
+        <div class="slider">
+          <div class="slides">
+            <img src="ProiectGrozavesti_Axonometrie.jpg" alt="Axonometrie">
+            <img src="ProiectGrozavesti_Masterplan.jpg" alt="Plan de situație">
+            <img src="ProiectGrozavesti_PlanSubsol.jpg" alt="Plan Subsol">
+            <img src="ProiectGrozavesti_PlanParter.jpg" alt="Plan Parter">
+            <img src="ProiectGrozavesti_PlanEtaj1.jpg" alt="Plan Etaj 1">
+            <img src="ProiectGrozavesti_PlanEtaj2-5-8.jpg" alt="Plan Etaje 2,5,8">
+            <img src="ProiectGrozavesti_PlanEtaj3-6-9.jpg" alt="Plan Etaje 3,6,9">
+            <img src="ProiectGrozavesti_PlanEtaj4-7.jpg" alt="Plan Etaje 4,7">
+            <img src="ProiectGrozavesti_SectiuneA.jpg" alt="Secțiune A-A">
+            <img src="ProiectGrozavesti_SectiuneB.jpg" alt="Secțiune B-B">
+            <img src="ProiectGrozavesti_FatadaEst.jpg" alt="Fațadă Est">
+            <img src="ProiectGrozavesti_FatadaVest.jpg" alt="Fațadă Vest">
+            <img src="ProiectGrozavesti_Perspectiva1.jpg" alt="Perspectivă">
+            <img src="ProiectGrozavesti_Perspectiva2.jpg" alt="Perspectivă">
+            <img src="ProiectGrozavesti_Perspectiva3.jpg" alt="Perspectivă">
+          </div>
+          <p class="slider-text">Axonometrie</p>
+          <div class="slider-buttons">
+            <button class="prev">&#10094;</button>
+            <h3>Centru educațional</h3>
+            <button class="next">&#10095;</button>
+          </div>
+            <div class="slider-caption">
+            Acest centru educațional, situat lângă stația de metrou Grozăvești, vine în ajutorul elevilor din liceele și școlile învecinate, pentru a-i ajuta pe aceștia în formarea și educarea pentru viitor.
 
-    <!-- FOOTER -->
-    <footer>
-        <p>&copy; 2025 Victoria Toporan</p>
-    </footer>
+            Centrul pune la dispoziție facilități moderne precum cantină, bibliotecă, săli de joc, săli de sport și chiar zone de cazare. Este un spațiu gândit pentru învățare, relaxare și dezvoltare fizică, care ajută în educața elevilor într-un mod accesibil.
+
+            Astfel, centrul nu este doar un loc pentru studiu, ci și un punct comunitar ce oferă suport, confort și acces la resurse educaționale pentru tinerii din zonă.
+            </div>
+        </div>
+      </div>
+
+      <!-- CARD 3: Facultate de Sculptură -->
+      <div class="card" id="proiect-facultate">
+        <div class="slider">
+          <div class="slides">
+            <img src="Axonometrie.jpg" alt="Axonometrie">
+            <img src="PlanDeSituatie.jpg" alt="Plan de Situație">
+            <img src="Subsol.jpg" alt="Plan Subsol">
+            <img src="Parter.jpg" alt="Plan Parter">
+            <img src="Etaj.jpg" alt="Plan Etaj 1">
+            <img src="Etaj2.jpg" alt="Plan Etaj 2">
+            <img src="Etaj3.jpg" alt="Plan Etaj 3">
+            <img src="Sectiuni.jpg" alt="Secțiuni">
+            <img src="Fatade.jpg" alt="Fațade">
+            <img src="AtelierPiatra.jpg" alt="Atelier Piatră">
+            <img src="AtelierPictura.jpg" alt="Atelier Pictură">
+            <img src="AtelierSculptura.jpg" alt="Atelier Metal">
+            <img src="ZonaExpo.jpg" alt="Zonă Expozițională">
+            <img src="Perspectiva.jpg" alt="Perspectivă">
+            <img src="Perspectiva1.jpg" alt="Perspectivă"> 
+          </div>
+          <p class="slider-text">Axonometrie</p>
+          <div class="slider-buttons">
+            <button class="prev">&#10094;</button>
+            <h3>Facultate de Sculptură</h3>
+            <button class="next">&#10095;</button>
+          </div>
+          <div class="slider-caption">
+            Următorul proiect este Extinderea Facultății de Sculptură de pe Calea Griviței nr. 22. Prin crearea de spații de lucru și săli mai spațioase și mai dotate din punct de vedere al echipamentelor și uneltelor folosite, studenții pot avea acces la condiții mult mai bune de lucru. 
+            Integrarea de galerii și spații expoziționale oferă facultății un circuit artistic activ, transformând-o într-un centru cultural deschis persoanelor pasionate de artă.
+            Extinderea facultății de sculptură este o necesitate în ceea ce privește formarea viitoarelor generații de artiști și o îmbunătățire în viitorul artei și al educației artistice din România. 
+          </div>
+        </div>
+      </div>
+
+            <!-- CARD 4: Piața Agroalimentară -->
+      <div class="card" id="proiect-centru">
+        <div class="slider">
+          <div class="slides">
+            <img src="ProiectGrozavesti_Axonometrie.jpg" alt="Axonometrie">
+            <img src="ProiectGrozavesti_Masterplan.jpg" alt="Plan de situație">
+            <img src="ProiectGrozavesti_PlanSubsol.jpg" alt="Plan Subsol">
+            <img src="ProiectGrozavesti_PlanParter.jpg" alt="Plan Parter">
+            <img src="ProiectGrozavesti_PlanEtaj1.jpg" alt="Plan Etaj 1">
+            <img src="ProiectGrozavesti_PlanEtaj2-5-8.jpg" alt="Plan Etaje 2,5,8">
+            <img src="ProiectGrozavesti_PlanEtaj3-6-9.jpg" alt="Plan Etaje 3,6,9">
+            <img src="ProiectGrozavesti_PlanEtaj4-7.jpg" alt="Plan Etaje 4,7">
+            <img src="ProiectGrozavesti_SectiuneA.jpg" alt="Secțiune A-A">
+            <img src="ProiectGrozavesti_SectiuneB.jpg" alt="Secțiune B-B">
+            <img src="ProiectGrozavesti_FatadaEst.jpg" alt="Fațadă Est">
+            <img src="ProiectGrozavesti_FatadaVest.jpg" alt="Fațadă Vest">
+            <img src="ProiectGrozavesti_Perspectiva1.jpg" alt="Perspectivă">
+            <img src="ProiectGrozavesti_Perspectiva2.jpg" alt="Perspectivă">
+            <img src="ProiectGrozavesti_Perspectiva3.jpg" alt="Perspectivă">
+          </div>
+          <p class="slider-text">Axonometrie</p>
+          <div class="slider-buttons">
+            <button class="prev">&#10094;</button>
+            <h3>Centru educațional</h3>
+            <button class="next">&#10095;</button>
+          </div>
+        </div>
+      </div>
+
+            <!-- CARD 5: Muzeu -->
+      <div class="card" id="proiect-centru">
+        <div class="slider">
+          <div class="slides">
+            <img src="ProiectGrozavesti_Axonometrie.jpg" alt="Axonometrie">
+            <img src="ProiectGrozavesti_Masterplan.jpg" alt="Plan de situație">
+            <img src="ProiectGrozavesti_PlanSubsol.jpg" alt="Plan Subsol">
+            <img src="ProiectGrozavesti_PlanParter.jpg" alt="Plan Parter">
+            <img src="ProiectGrozavesti_PlanEtaj1.jpg" alt="Plan Etaj 1">
+            <img src="ProiectGrozavesti_PlanEtaj2-5-8.jpg" alt="Plan Etaje 2,5,8">
+            <img src="ProiectGrozavesti_PlanEtaj3-6-9.jpg" alt="Plan Etaje 3,6,9">
+            <img src="ProiectGrozavesti_PlanEtaj4-7.jpg" alt="Plan Etaje 4,7">
+            <img src="ProiectGrozavesti_SectiuneA.jpg" alt="Secțiune A-A">
+            <img src="ProiectGrozavesti_SectiuneB.jpg" alt="Secțiune B-B">
+            <img src="ProiectGrozavesti_FatadaEst.jpg" alt="Fațadă Est">
+            <img src="ProiectGrozavesti_FatadaVest.jpg" alt="Fațadă Vest">
+            <img src="ProiectGrozavesti_Perspectiva1.jpg" alt="Perspectivă">
+            <img src="ProiectGrozavesti_Perspectiva2.jpg" alt="Perspectivă">
+            <img src="ProiectGrozavesti_Perspectiva3.jpg" alt="Perspectivă">
+          </div>
+          <p class="slider-text">Axonometrie</p>
+          <div class="slider-buttons">
+            <button class="prev">&#10094;</button>
+            <h3>Centru educațional</h3>
+            <button class="next">&#10095;</button>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- CONTACT -->
+  <section id="contact">
+    <h2>Contact</h2>
+    <p>Email: toporan_victoria@yahoo.com</p>
+    <p>Instagram: <a href="https://instagram.com/victoria.toporan" target="_blank">victoria.toporan</a></p>
+  </section>
+
+  <footer>
+    <p>&copy; 2025 Victoria Toporan</p>
+  </footer>
+
+  <!-- SCRIPT SLIDER + CENTRARE CARD LA CLICK -->
+  <script>
+    // Slider
+    document.querySelectorAll('.slider').forEach(slider => {
+      const slides = slider.querySelectorAll('img');
+      const text = slider.querySelector('.slider-text');
+      let index = 0;
+      const texts = Array.from(slides).map(img => img.alt);
+
+      function showSlide(i) {
+        index = (i + slides.length) % slides.length;
+        slides.forEach((img, idx) => img.style.display = idx === index ? 'block' : 'none');
+        text.innerText = texts[index];
+      }
+
+      slider.querySelector('.prev').addEventListener('click', () => showSlide(index - 1));
+      slider.querySelector('.next').addEventListener('click', () => showSlide(index + 1));
+
+      showSlide(0);
+    });
+
+    // Centrare card la click
+    document.querySelectorAll('.card').forEach(card => {
+      card.addEventListener('click', () => {
+        card.scrollIntoView({
+          behavior: 'smooth',
+          block: 'center',
+          inline: 'center'
+        });
+      });
+    });
+  </script>
+
 </body>
 </html>
