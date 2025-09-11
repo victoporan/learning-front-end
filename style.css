@@ -15,7 +15,7 @@ body {
 /* Header */
 header {
   background: #9c7f7f;
-  background-image: url('beige-abstract-wallpaper-background-image.jpg');
+  background-image: url('../images/beige-abstract-wallpaper-background-image.jpg');
   background-size: cover;  
   background-position: 0px;
   background-repeat: no-repeat;
