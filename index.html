@@ -1,18 +1,18 @@
 <!DOCTYPE html>
 <html lang="ro">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Portofoliu Arhitectură - Victoria Toporan</title>
-  <link rel="stylesheet" href="assets/css/style.css">
+<head>  <!-- conține meta-informații despre pagină -->
+  <meta charset="UTF-8">  <!-- setează codarea caract. pentru pagina web -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">  <!-- face site-ul responsive, se adaptează la dimensiunea ecranului -->
+  <title>Portofoliu Arhitectură - Victoria Toporan</title>  <!-- titlul paginii afișat în tabul browserului -->
+  <link rel="stylesheet" href="assets/css/style.css">  <!-- leagă fișierul CSS extern pentru stiluri -->
 </head>
-<body>
+<body>  <!-- conținutul vizibil al paginii începe de la body -->
 
   <!-- HEADER -->
-  <header>
-    <h1>Portofoliu Arhitectură</h1>
-    <nav>
-      <ul>
+  <header>  <!-- secțiune pentru antetul paginii -->
+    <h1>Portofoliu Arhitectură</h1>  <!-- titlul principal -->
+    <nav>  <!-- element pentru meniul de navigare -->
+      <ul>  <!-- listă pentru linkurile meniului -->
         <li><a href="#despre">Despre mine</a></li>
         <li><a href="#proiecte">Proiecte</a></li>
         <li><a href="#contact">Contact</a></li>
@@ -21,8 +21,8 @@
   </header>
 
   <!-- DESPRE -->
-  <section id="despre">
-    <h2>Despre mine</h2>
+  <section id="despre">  <!-- secțiune cu informații despre autor -->
+    <h2>Despre mine</h2>  <!-- subtitlu -->
     <p>
       Bună! Sunt Victoria, proaspăt absolventă a Facultății de Arhitectură și sunt pasionată de designul modern,
       atât de interior cât și de exterior. Mai jos găsești câteva dintre proiectele mele realizate în timpul
@@ -33,10 +33,10 @@
   <!-- PROIECTE -->
   <section id="proiecte">
     <h2>Proiectele mele</h2>
-<div class="thumbnails">
-  <div class="thumb-wrapper">
-    <a href="#proiect-locuinta" class="thumb">
-      <img src="assets/images/Scene-19.jpg" alt="Proiect 1">
+<div class="thumbnails"> <!-- Container pentru cercuri -->
+  <div class="thumb-wrapper"> <!-- container pentru un thumb și textul lui -->
+    <a href="#proiect-locuinta" class="thumb"> <!-- link către proiect -->
+      <img src="assets/images/Scene-19.jpg" alt="Proiect 1"> <!-- imagine -->
     </a>
     <p class="thumb-text">Locuință</p>
   </div>
@@ -72,12 +72,12 @@
 
 
 
-    <div class="galerie">
+    <div class="galerie"> <!-- container pentru cardurile mari cu proiecte -->
 
       <!-- CARD 1: Locuință -->
-      <div class="card" id="proiect-locuinta">
-        <div class="slider">
-          <div class="slides">
+      <div class="card" id="proiect-locuinta"> <!-- card individ. pt proiect -->
+        <div class="slider"> <!-- slider de imagini -->
+          <div class="slides"> <!-- container pt. toate imaginile din slider -->
             <img src="assets/images/scene-17.jpg" alt="Perspectivă">
             <img src="assets/images/Scene-18.jpg" alt="Perspectivă">
             <img src="assets/images/Scene-19.jpg" alt="Perspectivă">
@@ -85,10 +85,10 @@
           </div>
   
           <p class="slider-text">Zonă de citit</p>
-          <div class="slider-buttons">
-            <button class="prev">&#10094;</button>
+          <div class="slider-buttons"> <!-- butoanele ale sliderului -->
+            <button class="prev">&#10094;</button> <!-- Buton prev -->
             <h3>Locuință</h3>
-            <button class="next">&#10095;</button>
+            <button class="next">&#10095;</button> <!-- Buton next -->
           </div>
             <div class="slider-caption">
             Acest colț de interior are un vibe cald și relaxat, cu o combinație plăcută între lemnul închis de pe perete și mobilierul modern, în tonuri neutre. Tabloul minimalist cu linia siluetei adaugă un strop de artă fără să încarce spațiul, iar vaza cu ramuri delicate aduce o notă naturală și caldă. Toate elementele împreună creează un loc simplu, dar elegant, perfect pentru momente de liniște sau citit.
@@ -234,7 +234,7 @@
   <section id="contact">
     <h2>Contact</h2>
     <p>Email: toporan_victoria@yahoo.com</p>
-    <p>Instagram: <a href="https://instagram.com/victoria.toporan" target="_blank">victoria.toporan</a></p>
+    <p>Instagram: <a href="https://instagram.com/victoria.toporan" target="_blank">victoria.toporan</a></p> <!-- link extern -->
   </section>
 
   <footer>
@@ -245,30 +245,30 @@
   <script>
     // Slider
     document.querySelectorAll('.slider').forEach(slider => {
-      const slides = slider.querySelectorAll('img');
-      const text = slider.querySelector('.slider-text');
+      const slides = slider.querySelectorAll('img'); // selectează toate imaginile din slider
+      const text = slider.querySelector('.slider-text'); // selectează textul slider
       let index = 0;
-      const texts = Array.from(slides).map(img => img.alt);
+      const texts = Array.from(slides).map(img => img.alt); // extrage descrierea imaginilor
 
       function showSlide(i) {
-        index = (i + slides.length) % slides.length;
-        slides.forEach((img, idx) => img.style.display = idx === index ? 'block' : 'none');
-        text.innerText = texts[index];
+        index = (i + slides.length) % slides.length; // index ciclabil
+        slides.forEach((img, idx) => img.style.display = idx === index ? 'block' : 'none'); // afișează doar imaginea curentă
+        text.innerText = texts[index]; // actualizează textul
       }
 
-      slider.querySelector('.prev').addEventListener('click', () => showSlide(index - 1));
-      slider.querySelector('.next').addEventListener('click', () => showSlide(index + 1));
+      slider.querySelector('.prev').addEventListener('click', () => showSlide(index - 1)); // buton anterio
+      slider.querySelector('.next').addEventListener('click', () => showSlide(index + 1)); // buton următor
 
-      showSlide(0);
+      showSlide(0);  // initializează primul slide
     });
 
     // Centrare card la click
-    document.querySelectorAll('.card').forEach(card => {
-      card.addEventListener('click', () => {
+    document.querySelectorAll('.card').forEach(card => {  // Adaugă un eveniment la click pe fiecare card
+      card.addEventListener('click', () => { // la click, cardul va fi adus în centru
         card.scrollIntoView({
-          behavior: 'smooth',
-          block: 'center',
-          inline: 'center'
+          behavior: 'smooth', // efect de scroll lin
+          block: 'center',    // vertical, cardul va fi centrat
+          inline: 'center'    // orizontal, cardul va fi centrat
         });
       });
     });
