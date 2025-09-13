@@ -262,3 +262,7 @@ footer {
     height: auto;       /* înălțimea se ajustează proporțional */
   }
 }
+
+html {
+  scroll-behavior: smooth; /* smooth scroll pentru linkurile cu # din html*/
+}

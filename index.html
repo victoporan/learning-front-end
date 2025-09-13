@@ -241,38 +241,54 @@
     <p>&copy; 2025 Victoria Toporan</p>
   </footer>
 
-  <!-- SCRIPT SLIDER + CENTRARE CARD LA CLICK -->
-  <script>
-    // Slider
-    document.querySelectorAll('.slider').forEach(slider => {
-      const slides = slider.querySelectorAll('img'); // selectează toate imaginile din slider
-      const text = slider.querySelector('.slider-text'); // selectează textul slider
-      let index = 0;
-      const texts = Array.from(slides).map(img => img.alt); // extrage descrierea imaginilor
+<!-- SCRIPT SLIDER + CENTRARE CARD LA CLICK + CENTRARE LA CERCURI -->
+<script>
+  // Slider
+  document.querySelectorAll('.slider').forEach(slider => {
+    const slides = slider.querySelectorAll('img'); // selectează toate imaginile din slider
+    const text = slider.querySelector('.slider-text'); // selectează textul slider
+    let index = 0;
+    const texts = Array.from(slides).map(img => img.alt); // extrage descrierea imaginilor
 
-      function showSlide(i) {
-        index = (i + slides.length) % slides.length; // index ciclabil
-        slides.forEach((img, idx) => img.style.display = idx === index ? 'block' : 'none'); // afișează doar imaginea curentă
-        text.innerText = texts[index]; // actualizează textul
-      }
+    function showSlide(i) {
+      index = (i + slides.length) % slides.length; // index ciclabil?
+      slides.forEach((img, idx) => img.style.display = idx === index ? 'block' : 'none'); // afișează doar imaginea curentă
+      text.innerText = texts[index]; // actualizează textul
+    }
 
-      slider.querySelector('.prev').addEventListener('click', () => showSlide(index - 1)); // buton anterio
-      slider.querySelector('.next').addEventListener('click', () => showSlide(index + 1)); // buton următor
+    slider.querySelector('.prev').addEventListener('click', () => showSlide(index - 1)); // buton anterior
+    slider.querySelector('.next').addEventListener('click', () => showSlide(index + 1)); // buton următor
 
-      showSlide(0);  // initializează primul slide
+    showSlide(0);  // initializează primul slide?
+  });
+
+  // Centrare card la click
+  document.querySelectorAll('.card').forEach(card => {  // Adaugă un eveniment la click pe fiecare card
+    card.addEventListener('click', () => { // la click, cardul e adus în centru
+      card.scrollIntoView({
+        behavior: 'smooth', // efect de scroll lin
+        block: 'center',    // vertical, cardul va fi centrat
+        inline: 'center'    // orizontal, cardul va fi centrat
+      });
     });
+  });
 
-    // Centrare card la click
-    document.querySelectorAll('.card').forEach(card => {  // Adaugă un eveniment la click pe fiecare card
-      card.addEventListener('click', () => { // la click, cardul va fi adus în centru
-        card.scrollIntoView({
+  // Centrare card și la click pe cercuri
+  document.querySelectorAll('.thumb').forEach(link => {
+    link.addEventListener('click', function(e) {
+      e.preventDefault(); // oprește săritura instant
+      const targetId = this.getAttribute('href'); // ia id-ul (#proiect-...)
+      const targetElement = document.querySelector(targetId);
+
+      if (targetElement) {
+        targetElement.scrollIntoView({
           behavior: 'smooth', // efect de scroll lin
           block: 'center',    // vertical, cardul va fi centrat
           inline: 'center'    // orizontal, cardul va fi centrat
         });
-      });
+      }
     });
-  </script>
-
+  });
+</script>
 </body>
 </html>
